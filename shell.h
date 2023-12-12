@@ -6,5 +6,10 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+
+void print_prompt(void);
+char *read_line(void);
 
 #endif
