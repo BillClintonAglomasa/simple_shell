@@ -1,7 +1,0 @@
-#include "shell.h"
-
-void print_prompt(void)
-{
-	char *prompt = "$ \\n";
-	write(STDOUT_FILENO, prompt, 3);
-}
