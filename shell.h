@@ -9,7 +9,8 @@
 #include <string.h>
 #include <stdio.h>
 
-int _putchar(char c);
+int _print_a_char(char c);
+int _strlength(char *str);
 void print_prompt(void);
 char *read_line(void);
 
