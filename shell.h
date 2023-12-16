@@ -9,6 +9,7 @@
 #include <string.h>
 #include <stdio.h>
 
+int _putchar(char c);
 void print_prompt(void);
 char *read_line(void);
 
