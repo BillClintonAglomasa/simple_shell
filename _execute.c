@@ -1,9 +1,8 @@
 #include "shell.h"
 
-void execute_function(char *read_command)
+void _execute(char *read_command)
 {
-	char *terminator = NULL;
-	char **argv = {read_command, terminator};
+	char *argv[] = {read_command, NULL};
 
 	execve(argv[0], argv, NULL);
 }
