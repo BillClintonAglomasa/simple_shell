@@ -11,7 +11,6 @@
 
 void _print_prompt(void)
 {
-	char *prompt = "$ ";
-	write(STDOUT_FILENO, prompt, 2);
-	write(STDOUT_FILENO, "\n", 3);
+	_print_a_char('$');
+	_print_a_char('\n');
 }
