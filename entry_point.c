@@ -11,6 +11,7 @@ int main(void)
 	while (1)
 	{
 		_print_prompt();
+		a = _get_input();
 	}
 
 	return (0);

@@ -1,6 +1,13 @@
 #include "shell.h"
 
-char *read_line(void)
+/**
+ * _get_input - Reads a line from stdinput
+ *
+ * Return: The pointer to the line read.
+ * On error -1 is returned, and errno is set appropriately.
+ */
+
+char *_get_input(void)
 {
 	char *read_command = NULL;
 	size_t n = 0;
