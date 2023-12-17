@@ -10,7 +10,7 @@ int main(void)
 {
 	while (1)
 	{
-		prompt();
+		_print_prompt();
 	}
 
 	return (0);
