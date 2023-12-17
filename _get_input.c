@@ -20,15 +20,17 @@ char *_get_input(void)
 	{
 		free(read_command);
 		perror("The was error reading from stdin");
-		return NULL;
+		return (NULL);
 	}
 	else
 	{
-		/*last_byte_returned = read_command[bytes_returned - 1];
-		if (last_byte_returned == '\n')
-		{
-			read_command[bytes_returned - 1] = '\0';
-			}*/
+		/**
+		 *last_byte_returned = read_command[bytes_returned - 1];
+		 *if (last_byte_returned == '\n')
+		 *{
+		 *	read_command[bytes_returned - 1] = '\0';
+		 *	}
+		 */
 
 		return (read_command);
 	}
