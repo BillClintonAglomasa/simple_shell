@@ -11,7 +11,7 @@
 
 int _print_a_char(char c);
 void _print_prompt(void);
+char *_get_input(void);
 int _strlength(char *str);
-char *read_line(void);
 
 #endif
