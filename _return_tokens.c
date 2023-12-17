@@ -13,10 +13,9 @@ char *_return_tokens(char *read_line)
 	char *token = NULL;
 	char *delimiter = " \n";
 	int i;
+	char *argv[] = NULL;
 
-	*argv[] = NULL;
-
-	token = strtok(read_line, delimiter);
+	token = strtok(*read_line, delimiter);
 
 	if (token == NULL)
 	{
@@ -27,7 +26,7 @@ char *_return_tokens(char *read_line)
 
 	while (token != NULL)
 	{
-		token = strktok(NULL, delimeter);
+		token = strtok(NULL, delimiter);
 		argv[i] = token;
 		i++;
 	}
