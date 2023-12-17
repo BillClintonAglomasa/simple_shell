@@ -8,6 +8,10 @@
 
 int main(void)
 {
-	prompt(void);
-	return 0;
+	while (1)
+	{
+		prompt();
+	}
+
+	return (0);
 }

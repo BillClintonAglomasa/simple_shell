@@ -10,8 +10,8 @@
 #include <stdio.h>
 
 int _print_a_char(char c);
-int _strlength(char *str);
 void print_prompt(void);
+int _strlength(char *str);
 char *read_line(void);
 
 #endif
