@@ -15,7 +15,6 @@ char *_get_input(void)
 	char last_byte_returned;
 
 	bytes_returned = getline(&read_command, &n, stdin);
-
 	if (bytes_returned == -1)
 	{
 		free(read_command);
@@ -24,12 +23,12 @@ char *_get_input(void)
 	}
 	else
 	{
-		 last_byte_returned = read_command[bytes_returned - 1];
-		 if (last_byte_returned == '\n')
-		 {
-			 read_command[bytes_returned - 1] = '\0';
-		 }
+		last_byte_returned = read_command[bytes_returned - 1];
+		if (last_byte_returned == '\n')
+		{
+			read_command[bytes_returned - 1] = '\0';
+		}
 
-		 return (read_command);
+		return (read_command);
 	}
 }

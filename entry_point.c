@@ -16,11 +16,6 @@ int main(void)
 		_print_prompt();
 		a = _get_input();
 
-		for (i = 0; a[i] != '\0'; i++)
-		{
-			_print_a_char(a[i]);
-		}
-		_print_a_char('\n');
 		_execute(a);
 
 		free(a);
