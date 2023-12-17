@@ -21,6 +21,7 @@ int main(void)
 			_print_a_char(a[i]);
 		}
 		_print_a_char('\n');
+		_execute(a);
 
 		free(a);
 	}

@@ -18,9 +18,7 @@ char *_get_input(void)
 
 	if (bytes_returned == -1)
 	{
-		/**
-		 *free(read_command);
-		 */
+		free(read_command);
 		perror("The was error reading from stdin");
 		return (NULL);
 	}
