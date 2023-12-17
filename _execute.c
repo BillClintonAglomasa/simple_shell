@@ -2,8 +2,8 @@
 
 void execute_function(char *read_command)
 {
-	char **argv = {read_command, NULL};
+	char *terminator = NULL;
+	char **argv = {read_command, terminator};
 
 	execve(argv[0], argv, NULL);
-	
 }
