@@ -17,7 +17,7 @@ int main(void)
 		a = _get_input();
 		b = _return_tokens(a);
 
-		i =0;
+		i = 0;
 		while (b[i] != NULL && b[i] != '\0')
 		{
 			j = 0;
@@ -30,7 +30,9 @@ int main(void)
 			i++;
 		}
 
-		//_execute(a);
+		/**
+		 *_execute(a);
+		 */
 
 		free(a);
 		free(b);
