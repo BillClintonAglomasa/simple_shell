@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "main.h"
 
 /**
  * _strlength - Prints a string to stdout

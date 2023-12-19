@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "main.h"
 
 /**
  * _print_a_char - writes the character c to stdout
