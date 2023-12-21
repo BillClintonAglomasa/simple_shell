@@ -16,12 +16,13 @@ char *_capitalize_first_word(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (i == 0 && str[i] => 'a' && str[i] <= 'z')
+		if (i == 0 && str[i] >= 'a' && str[i] <= 'z')
 			str[i] = str[i] - 32;
 		for (j = 0; j < 13; j++)
 		{
-			if (str[i] == spe[j]);if ()
-						      str[i + 1] = str[i + 1] - 32;
+			if (str[i] == spe[j])
+				if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
+					str[i + 1] = str[i + 1] - 32;
 		}
 		i++;
 	}
