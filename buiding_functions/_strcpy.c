@@ -15,6 +15,7 @@ char *_strcpy(char *str1, char *str2)
 	while (str2[a] != '\0')
 	{
 		str1[a] = str2[a];
+		a++;
 	}
 	str1[a] = '\0';
 
