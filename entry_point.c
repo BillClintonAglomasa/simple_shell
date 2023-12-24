@@ -30,9 +30,7 @@ int main(void)
 			i++;
 		}
 
-		/**
-		 *_execute(a);
-		 */
+		 _execute(a);
 
 		free(a);
 		free(b);

@@ -1,4 +1,27 @@
-#include "shell.h"
+#include "shell.h"File Edit Options Buffers Tools C Help                                         
+        char *delimiter = " \n";
+	int i;
+        char *argv[] = NULL;
+
+        token = strtok(*read_line, delimiter);
+
+        if (token == NULL)
+        {
+                perror("Unable to read sentence or done reading");
+	}
+
+        i = 0;
+
+        while (token != NULL)
+        {
+                token = strtok(NULL, delimiter);
+		argv[i] = token;
+                i++;
+	}
+        argv[i] = NULL;
+
+        return (argv);
+}
 
 /**
  * _return_tokens - Breaks a sentence using a delimiter
@@ -13,7 +36,30 @@ char *_return_tokens(char *read_line)
 	char *token = NULL;
 	char *delimiter = " \n";
 	int i;
-	char *argv[] = NULL;
+File Edit Options Buffers Tools C Help                                         
+        char *delimiter = " \n";
+	int i;
+        char *argv[] = NULL;
+
+        token = strtok(*read_line, delimiter);
+
+        if (token == NULL)
+        {
+                perror("Unable to read sentence or done reading");
+	}
+
+        i = 0;
+
+        while (token != NULL)
+        {
+                token = strtok(NULL, delimiter);
+		argv[i] = token;
+                i++;
+	}
+        argv[i] = NULL;
+
+        return (argv);
+}	char *argv[] = NULL;
 
 	argv = malloc(sizeof(*argv[]) * (_strlength(read_line) + 1));
 
