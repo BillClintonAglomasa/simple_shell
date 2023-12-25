@@ -9,13 +9,16 @@
 int main(void)
 {
 	int i, j;
-	char *a = NULL, *b = NULL;
+	char *a = NULL;
+	char *b = NULL;
 
 	while (1)
 	{
 		_print_prompt();
-		a = _get_input();
-		b = _return_tokens(a);
+		*a = _get_input();
+		printf("%s", a);
+		break;
+		*b = _return_tokens(a);
 
 		i = 0;
 		while (b[i] != NULL && b[i] != '\0')
