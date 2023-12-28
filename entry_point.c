@@ -15,28 +15,27 @@ int main(void)
 	while (1)
 	{
 		_print_prompt();
-		*a = _get_input();
-		printf("%s", a);
-		break;
-		*b = _return_tokens(a);
+		a = _get_input();
+		b = _return_tokens(a);
+		printf("%s", b);
 
-		i = 0;
-		while (b[i] != NULL && b[i] != '\0')
-		{
-			j = 0;
-			while (b[i][j] != '\0')
-			{
-				_print_a_char(b[i][j]);
-				j++;
-			}
-			_print_a_char('\0');
-			i++;
-		}
+		//i = 0;
+		//while (b[i] != NULL && b[i] != '\0')
+		//{
+		//	j = 0;
+		//	while (b[i][j] != '\0')
+		//	{
+		//		_print_a_char(b[i][j]);
+		//		j++;
+		//	}
+		//	_print_a_char('\0');
+		//	i++;
+		//}
 
-		 _execute(a);
+		// _execute(a);
 
-		free(a);
-		free(b);
+		//free(a);
+		//free(b);
 	}
 
 	return (0);

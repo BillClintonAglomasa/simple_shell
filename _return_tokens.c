@@ -8,14 +8,14 @@
  * Return: A pointer to an array of tokens
  */
 
-char *_return_tokens(char *read_line)
+char **_return_tokens(char *read_line)
 {
 	char *token = NULL;
 	char *delimiter = " \n";
 	int i;
-	char *argv[] = NULL;
+	char *argv[];
 
-	token = strtok(*read_line, delimiter);
+	token = strtok(read_line, delimiter);
 
 	if (token == NULL)
 	{
