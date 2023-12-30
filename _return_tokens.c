@@ -12,8 +12,17 @@ char **_return_tokens(char *read_line)
 {
 	char *token = NULL;
 	char *delimiter = " \n";
+	char **argv = NULL;
+	int buffersize = 100;
 	int i;
-	char *argv[];
+
+	argv = malloc(sizeof(char *) * buffersize);
+
+	if (argv == NULL)
+	{
+		perror("Unable to allocate memory for argv");
+		exit(EXIT_FAILURE);
+	}
 
 	token = strtok(read_line, delimiter);
 
@@ -26,9 +35,9 @@ char **_return_tokens(char *read_line)
 
 	while (token != NULL)
 	{
-		token = strtok(NULL, delimiter);
-		argv[i] = token;
+		_strcpy(argv[i], token);
 		i++;
+		token = strtok(NULL, delimiter);
 	}
 	argv[i] = NULL;
 

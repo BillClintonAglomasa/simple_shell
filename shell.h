@@ -12,6 +12,7 @@
 int _print_a_char(char c);
 void _print_prompt(void);
 char *_get_input(void);
+char *_strcpy(char *str2, char *str1);
 char **_return_tokens(char *read_line);
 int _execute(char *read_command);
 

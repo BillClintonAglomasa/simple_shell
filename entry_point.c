@@ -10,14 +10,17 @@ int main(void)
 {
 	int i, j;
 	char *a = NULL;
-	char *b = NULL;
+	char **b = NULL;
 
 	while (1)
 	{
 		_print_prompt();
 		a = _get_input();
 		b = _return_tokens(a);
-		printf("%s", b);
+		while (b[i] != NULL)
+		{
+			printf("%s", b[i]);
+		}
 
 		//i = 0;
 		//while (b[i] != NULL && b[i] != '\0')
