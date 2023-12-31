@@ -17,9 +17,12 @@ int main(void)
 		_print_prompt();
 		a = _get_input();
 		b = _return_tokens(a);
+		//printf("%s", b);
+		i = 0;
 		while (b[i] != NULL)
 		{
 			printf("%s", b[i]);
+			i++;
 		}
 
 		//i = 0;
