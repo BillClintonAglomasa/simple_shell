@@ -40,8 +40,8 @@ int main(void)
 
 		// _execute(a);
 
-		//free(a);
-		//free(b);
+		free(a);
+		free(b);
 	}
 
 	return (0);
