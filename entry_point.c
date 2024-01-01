@@ -21,7 +21,7 @@ int main(void)
 		i = 0;
 		while (b[i] != NULL)
 		{
-			printf("%s", b[i]);
+			printf("%s\n", b[i]);
 			i++;
 		}
 

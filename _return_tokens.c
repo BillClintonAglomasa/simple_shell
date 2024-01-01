@@ -35,6 +35,7 @@ char **_return_tokens(char *read_line)
 
 	while (token != NULL)
 	{
+		argv[i] = malloc(sizeof(char) * (_strlength(token) + 1));
 		_strcpy(argv[i], token);
 		i++;
 		token = strtok(NULL, delimiter);
