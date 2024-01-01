@@ -3,15 +3,14 @@
 /**
  * _execute - Executes an executable file
  *
- * @read_command: Pointer to the command read from stdin
+ * @argv: Pointer to an array of pointers
  *
  * Return: Returns no value
  */
 
-int _execute(char *read_command)
+int _execute(char **argv)
 {
 	int a;
-	char *argv[] = {read_command, NULL};
 
 	if (argv == NULL)
 	{
