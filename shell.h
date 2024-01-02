@@ -15,6 +15,7 @@ char *_get_input(void);
 char *_strcpy(char *str2, char *str1);
 int _strlength(char *str);
 char **_return_tokens(char *read_line);
-int _execute(char *read_command);
+int _execute(char **argv);
+void _free_tokens(char **argv);
 
 #endif

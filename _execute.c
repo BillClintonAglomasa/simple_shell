@@ -12,7 +12,7 @@ int _execute(char **argv)
 {
 	int a;
 
-	if (argv == NULL)
+	if (argv == NULL || argv[0] == NULL)
 	{
 		return (1);
 	}
@@ -23,4 +23,8 @@ int _execute(char **argv)
 	{
 		perror("Not found");
 	}
+
+	_free_tokens(argv);
+
+	return (a);
 }
