@@ -10,5 +10,5 @@
 void _print_prompt(void)
 {
 	_print_a_char('$');
-	_print_a_char('\n');
+	_print_a_char(' ');
 }

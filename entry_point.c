@@ -6,7 +6,7 @@
  * Return: Always return 0.
  */
 
-int main(void)
+void main(void)
 {
 	int i, j;
 	char *a = NULL;
@@ -23,6 +23,7 @@ int main(void)
 		free(a);
 		free(b);
 	}
+	printf("Hello");
 
-	return (0);
+	//return (0);
 }
